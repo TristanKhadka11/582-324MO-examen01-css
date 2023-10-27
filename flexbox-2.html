@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flexbox 2 : Anagramme</title>
-    <link href="./ne_pas_modifier/css/styles.css" rel="stylesheet" />
-    <style>
 
-      /* Veuillez écrire votre CSS ici */
-      
-
-
-      /* ----------------------------- */
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox 2 : Anagramme</title>
+  <link href="./ne_pas_modifier/css/styles.css" rel="stylesheet" />
+  <style>
+    /* Veuillez écrire votre CSS ici */
     
-    </style>
-  </head>
-  
-  <!-- Ne pas modifier le HTML ci-dessous -->
-  <body>
-    <h1>Flexbox 2 : Anagramme</h1>
-    <div class="container no-increment">
-      <div><span>R</span></div>
-      <div><span>O</span></div>
-      <div><span>S</span></div>
-      <div><span>E</span></div>
-    </div>
-    <div class="preview">
-      <img src="./ne_pas_modifier/images/q2.png" alt="">
-    </div>
-  </body>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    div:nth-child(2) {
+
+      order: 4;
+
+    }
+
+    div:nth-child(3) {
+
+      order: 3;
+
+    }
+
+    /* ----------------------------- */
+  </style>
+</head>
+
+<!-- Ne pas modifier le HTML ci-dessous -->
+
+<body>
+  <h1>Flexbox 2 : Anagramme</h1>
+  <div class="container no-increment">
+    <div><span>R</span></div>
+    <div><span>O</span></div>
+    <div><span>S</span></div>
+    <div><span>E</span></div>
+  </div>
+  <div class="preview">
+    <img src="./ne_pas_modifier/images/q2.png" alt="">
+  </div>
+</body>
+
 </html>
